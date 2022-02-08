@@ -4,13 +4,13 @@ const refs = {
 }
 
 
-refs.addEventListener('input', onInputChange);
+refs.input.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
     if (event.currentTarget.value === "") {
-    output.textContent = "Anonymous";
+    refs.output.textContent = "Anonymous";
     } else {
-        output.textContent = event.currentTarget.value;
+        refs.output.textContent = event.currentTarget.value;
     };
 
 };
