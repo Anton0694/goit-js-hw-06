@@ -8,6 +8,8 @@ function onFormSubmit(event) {
   const formData = { email, password };
   if (email && password) {
     console.log(formData)
+    event.currentTarget.reset();
+  
       } else {
       alert('Please complete all fields')
   }
