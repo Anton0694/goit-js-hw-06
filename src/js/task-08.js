@@ -6,12 +6,12 @@ function formCheck(event) {
     const email = formElements.email.value;
     const password = formElements.password.value;
 
-    if (email.length || password.length === 0) {
+    if (email.length === 0 || password.length === 0) {
         alert('Заповніть всі поля');
         return;
     }
     const formData = {
-        email.length === 0,
+        email,
         password,
     };
 
